@@ -7,4 +7,7 @@ CodeR is a beta code-generating module that allows you to generate codes, store 
 
 ```lua
 local ServerStorage = game:GetService("ServerStorage")
-local CodeR = require(ServerStorage.CodeR)
+local CodeR = require(ServerStorage.CodeR) -- Requires CodeR. Recommended to leave module in ServerStorage. If you move it, make sure to put the correct directory.
+
+local Code = CodeR:GenerateCode() 
+```
