@@ -10,3 +10,4 @@ https://duued.gitbook.io/coder/
 local ServerStorage = game:GetService("ServerStorage")
 local CodeR = require(ServerStorage.CodeR)
 ```
+# This project has been abandoned and likely will not be worked on anymore.
