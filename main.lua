@@ -8,5 +8,3 @@ function generateCode(digits)
     end
     return tonumber(code)
 end
-
-print(generateCode(4))
