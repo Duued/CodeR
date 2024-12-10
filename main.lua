@@ -4,11 +4,15 @@ local codes = {}
 
 ---Generates a code with the specified number of digits
 ---@param digits number
+---@param storeAfterGenerating boolean|nil
 ---@return number
-function generateCode(digits)
+function generateCode(digits, storeAfterGenerating)
     local code = ""
     for i = 1, digits do
         code = code .. math.random(0, 9)
+    end
+    if storeAfterGenerating then
+        addCode(code)
     end
     return code
 end
