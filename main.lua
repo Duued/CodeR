@@ -19,15 +19,16 @@ end
 
 ---Adds a code
 ---@param code number
----@return nil
+---@return table
 function addCode(code)
     table.insert(codes, code)
+    return codes
 end
 
 ---Removes a code
 ---@param code number|nil
 ---@param index number|nil
----@return nil
+---@return table
 function removeCode(code, index)
     if code then
         for i, v in ipairs(codes) do
@@ -39,6 +40,7 @@ function removeCode(code, index)
     elseif index then
         table.remove(codes, index)
     end
+    return codes
 end
 
 ---Compares two codes
@@ -56,7 +58,8 @@ function getCodes()
 end
 
 ---Clears all stored codes
----@return nil
+---@return table
 function clearCodes()
     codes = {}
+    return {}
 end
